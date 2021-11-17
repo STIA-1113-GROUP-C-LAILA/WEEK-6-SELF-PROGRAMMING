@@ -1,0 +1,75 @@
+package operators;
+import java.util.Scanner;
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int grade1;
+		int grade2;
+		int mark;
+		char grade;
+		String subject1;
+		String subject2;
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.print("Please enter your subject : ");
+		subject1 = scan.next();
+		
+		System.out.print("Please enter your science mark : ");
+		grade1 = scan.nextInt();
+		
+		System.out.print("Please enter your subject : ");
+		subject2 = scan.next();
+		
+		System.out.print("Please enter your math mark: ");
+		grade2 = scan.nextInt();
+		
+		if ((grade1 >= 50) && (grade2 >= 50)) 
+		{
+			System.out.println("Congratulation,you passed your exam.");
+		}
+		else if ((grade1 > 50) || (grade2 <= 50)) {
+			System.out.println("You passed your science exam only.");
+		}
+		else if ((grade1 <= 50) || (grade2 > 50)) {
+			System.out.println("You passed your math exam only.");
+		}
+		else {
+			System.out.println("You failed your exam.");
+		}
+		 
+		if ((grade1 > grade2) && (grade1 < grade2))
+			System.out.println("Your math grade is much bigger than science mark");
+		else
+			System.out.println("Your science mark is much bigger than math grade.");
+		
+		mark = grade1 + grade2 / 2;
+		
+		if ((mark >= 80) || (mark == 100)) {
+			grade = 'A';
+		}
+		
+		else if ((mark >= 60 ) || (mark <= 79)) {
+			grade = 'B';
+		}
+		
+		else if ((mark >=50) || (mark <= 59)) {
+			grade = 'C';
+		}
+		
+		else {
+			grade = 'F';
+		}
+		
+		System.out.println("Your mark : " + mark);
+		System.out.println("Your grade is " + grade);
+		   
+		
+		
+		
+		
+
+	}
+
+}
