@@ -1,0 +1,15 @@
+package operators;
+
+public class Year {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int year = 1450;
+		int month = 5;
+		int date = 10;
+		
+		System.out.println((year <= 1582) && (month <= 10) && (date <= 15));
+		
+		
+	}
+}
