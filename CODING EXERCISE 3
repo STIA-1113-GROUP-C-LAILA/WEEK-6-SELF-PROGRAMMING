@@ -1,0 +1,26 @@
+package operators;
+
+public class Equal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double d1 = 2.2 + 4.4;
+		double d2 = 6.6;
+		int d3 = 2 + 4;
+		int d4 = 6;
+		String s1 = "Lailatul";
+		String s2 = "Laila";
+		boolean total;
+		boolean total2;
+		boolean total3;
+		
+		total = d1==d2;
+		total2 = d3==d4;
+		total3 = s1==s2;
+		
+		System.out.println("The total of two number is : " + total2); //kalau double takleh guna operator ==
+
+		System.out.println("The string  : " + total3);
+	}
+
+}
