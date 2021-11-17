@@ -1,0 +1,21 @@
+package operators;
+public class ExerciseInClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age = 18;
+		double height = 189;
+		double weight = 75.0 ;
+		boolean married = false;
+		char gender = 'm';
+		
+		System.out.println(!married && (gender == 'm'));
+		System.out.println((age >= 21) || (age <= 35 ));
+		System.out.println((height >= 180) && (weight >= 70) && (weight <= 80));
+		
+		System.out.println(!married && (gender =='m') && (age >= 21)|| (age <= 35) && (height >= 180) && (weight >= 70)||(weight <= 80));
+		
+	
+	}
+
+}
